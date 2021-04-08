@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import {
+   Animator,
+   ScrollContainer,
+   ScrollPage,
+   batch,
+   Fade,
+   FadeIn,
+   Move,
+   MoveIn,
+   MoveOut,
+   Sticky,
+   StickyIn,
+   ZoomIn,
+} from "react-scroll-motion";
+
+const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
+const FadeUp = batch(Fade(), Move(), Sticky());
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   return (
+      <ScrollContainer>
+         <ScrollPage page={0}>
+            <Animator animation={MoveOut(0, -200)}>
+               <span style={{ fontSize: "30px" }}>Let't me show you scroll animation 😀</span>
+            </Animator>
+         </ScrollPage>
+         <ScrollPage page={1}>
+            <Animator animation={ZoomInScrollOut}>
+               <span style={{ fontSize: "40px" }}>I'm FadeUpScrollOut ✨</span>
+            </Animator>
+         </ScrollPage>
+      </ScrollContainer>
+   );
 }
 
 export default App;
