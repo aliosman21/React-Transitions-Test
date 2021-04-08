@@ -1,5 +1,7 @@
+import { Component } from "react";
 import Particles from "react-tsparticles";
 import conf from "../Config/particles.json";
+import "../styles/Particles.css";
 class ParticlesBackground extends Component {
    constructor(props) {
       super(props);
@@ -25,7 +27,10 @@ class ParticlesBackground extends Component {
             init={this.particlesInit}
             loaded={this.particlesLoaded}
             options={conf}
+            canvasClassName="canvasClass"
          />
       );
    }
 }
+
+export default ParticlesBackground;
