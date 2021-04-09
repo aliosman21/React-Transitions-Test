@@ -3,16 +3,19 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./views/App";
 import Routes from "./Routes/Routes";
+import { BrowserRouter as Router } from "react-router-dom";
+
 import Particles from "./Components/Particles";
 import reportWebVitals from "./reportWebVitals";
+import "react-tiger-transition/styles/main.min.css";
 
 ReactDOM.render(
-   <React.StrictMode>
-      <Particles />
+   /*   <Particles /> */
+   <Router>
       <Routes>
          <App />
       </Routes>
-   </React.StrictMode>,
+   </Router>,
    document.getElementById("root")
 );
 

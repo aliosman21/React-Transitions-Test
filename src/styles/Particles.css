@@ -4,3 +4,6 @@
    position: absolute;
    z-index: -1;
 }
+.commonClass {
+   z-index: -1;
+}

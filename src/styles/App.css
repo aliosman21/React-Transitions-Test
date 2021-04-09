@@ -4,6 +4,11 @@ h1 {
 
    left: 50%;
 }
+.topContainer {
+   width: 100vw;
+   height: 100vh;
+   background-color: aqua;
+}
 .textHolder {
    display: flex;
    align-items: center;
@@ -33,4 +38,7 @@ h1 {
    width: 100%;
    position: relative;
    overflow: hidden;
+}
+a {
+   z-index: 2;
 }

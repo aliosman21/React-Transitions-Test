@@ -27,6 +27,7 @@ class ParticlesBackground extends Component {
             init={this.particlesInit}
             loaded={this.particlesLoaded}
             options={conf}
+            className="commonClass"
             canvasClassName="canvasClass"
          />
       );
