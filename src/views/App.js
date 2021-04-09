@@ -2,82 +2,55 @@ import Flip from "react-reveal/Flip";
 import Roll from "react-reveal/Roll";
 import Fade from "react-reveal/Fade";
 import Typist from "react-text-typist";
-import { Animate } from "react-simple-animate";
+import { Animate, AnimateKeyframes } from "react-simple-animate";
+import "animate.css/animate.min.css";
+import ScrollAnimation from "react-animate-on-scroll";
 import { motion } from "framer-motion";
+import myPic from "../assets/Me.jpg";
 import { NavLink } from "react-router-dom";
-
+import { useState } from "react";
 import "../styles/App.css";
-const pageVariants = {
-   initial: {
-      opacity: 0,
-      x: "-100vw",
-      scale: 0.8,
-   },
-   in: {
-      opacity: 1,
-      x: 0,
-      scale: 1,
-   },
-   out: {
-      opacity: 0,
-      x: "100vw",
-      scale: 1.2,
-   },
-};
 
-const pageTransition = {
-   type: "tween",
-   ease: "anticipate",
-   duration: 0.5,
-};
-
-const pageStyle = {
-   position: "absolute",
-};
 function App() {
    return (
       <>
-         <motion.div
-            style={pageStyle}
-            initial="initial"
-            animate="in"
-            exit="out"
-            variants={pageVariants}
-            transition={pageTransition}>
-            <NavLink to="/home">HOME</NavLink>
-
-            <div>
-               <Flip left>
-                  <h1>React Reveal</h1>
-               </Flip>
+         <div className="fullAppPage">
+            <div className="pictureBox">
+               <div>
+                  <AnimateKeyframes
+                     play="true"
+                     duration={2}
+                     fillMode="forwards"
+                     keyframes={["transform: rotateY(0) ", "transform: rotateY(180deg)"]}>
+                     <img
+                        width="110px"
+                        height="110px"
+                        src={myPic}
+                        style={{ borderRadius: "50%" }}
+                     />
+                  </AnimateKeyframes>
+               </div>
             </div>
-            {/*  <Roll top cascade>
-
-                  <div className="somebox">hello</div>
-               </Roll> */}
-            <Animate
-               play="true" // Toggle when animation should start
-               duration={1}
-               start={{
-                  transform: "translateX(0) ",
-                  opacity: 0,
-               }}
-               end={{
-                  transform: "translateX(160px) ",
-                  opacity: 1,
-               }}>
-               <div className="somebox"></div>
-            </Animate>
-            <div className="textHolder">
-               <Fade bottom>
-                  <Typist
-                     className={"myTypist"}
-                     sentences={["First Sentence", "Second Sentence", "Third Sentence"]}
-                     loop={true}
-                  />
-               </Fade>
+            <div className="titleholder">
+               <ScrollAnimation animateIn="animate__zoomInDown" duration="2">
+                  <h1>Software Engineer</h1>
+               </ScrollAnimation>
             </div>
-         </motion.div>
+
+            <div className="typistHolderDiv">
+               <Typist
+                  className={"myTypist"}
+                  typingSpeed="100"
+                  pauseTime="3000"
+                  sentences={[
+                     "Welcome to my website",
+                     "Hope you enjoy your look around",
+                     "Some weird stuff lies around here",
+                  ]}
+                  loop={false}
+               />
+            </div>
+         </div>
       </>
    );
 }

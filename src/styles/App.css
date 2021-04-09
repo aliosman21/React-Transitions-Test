@@ -1,44 +1,38 @@
-h1 {
-   padding: 0;
-   margin: 0;
-
-   left: 50%;
-}
-.topContainer {
-   width: 100vw;
-   height: 100vh;
-   background-color: aqua;
-}
-.textHolder {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
 .myTypist {
    font-weight: bold;
+   z-index: 100;
    stroke: black;
    font-size: 44px;
-   color: red;
+   color: #576d99;
+}
+.typistHolderDiv {
+   z-index: 100;
+   grid-area: Typist;
+   justify-self: center;
+   align-self: start;
 }
 
-.somebox {
-   width: 150px;
-   height: 150px;
-   background-color: red;
-   z-index: 100 !important;
-   transform-origin: 100px 100px;
-   margin: 0;
+.fullAppPage {
+   width: 100vw;
+   height: 100vh;
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   grid-template-columns: 0.2fr 3fr 0.2fr;
+   grid-template-areas:
+      ". pic . "
+      ". title ."
+      ". Typist ."
+      ". . .";
 }
-.animeDiv {
-   margin: 0;
-   position: absolute;
+
+.pictureBox {
+   grid-area: pic;
+   justify-self: center;
+   align-self: center;
 }
-.container {
-   width: 100%;
-   position: relative;
-   overflow: hidden;
-}
-a {
-   z-index: 2;
+.titleholder {
+   grid-area: title;
+   justify-self: center;
+   align-self: start;
+   color: #576d99;
 }

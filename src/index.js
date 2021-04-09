@@ -4,14 +4,18 @@ import "./index.css";
 import App from "./views/App";
 import Routes from "./Routes/Routes";
 import { BrowserRouter as Router } from "react-router-dom";
-
+import Navigation from "./Components/Navbar";
 import Particles from "./Components/Particles";
 import reportWebVitals from "./reportWebVitals";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
 import "react-tiger-transition/styles/main.min.css";
 
 ReactDOM.render(
    /*   <Particles /> */
    <Router>
+      <Navigation />
+      <Particles />
       <Routes>
          <App />
       </Routes>

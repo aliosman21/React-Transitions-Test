@@ -1,12 +1,12 @@
 {
    "background": {
       "color": {
-         "value": "#0d47a1"
+         "value": "#000000"
       }
    },
    "fpsLimit": 60,
    "interactivity": {
-      "detectsOn": "canvas",
+      "detect_on": "window",
       "events": {
          "onClick": {
             "enable": true,
