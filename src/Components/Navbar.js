@@ -13,6 +13,7 @@ import {
    MDBDropdownMenu,
    MDBDropdownItem,
 } from "mdbreact";
+import Sound from "../assets/yo.mp3";
 import { BrowserRouter as Router } from "react-router-dom";
 
 class NavbarPage extends Component {
@@ -25,7 +26,9 @@ class NavbarPage extends Component {
    };
 
    navigateToIndex = () => {};
-
+   /*    playAudio = () => {
+      new Audio(Sound).play();
+   }; */
    render() {
       return (
          <MDBNavbar color="indigo" dark expand="md">
@@ -47,7 +50,6 @@ class NavbarPage extends Component {
                   <MDBNavItem>
                      <MDBNavLink to="/login">Login Form</MDBNavLink>
                   </MDBNavItem>
-                  <MDBNavItem></MDBNavItem>
                </MDBNavbarNav>
             </MDBCollapse>
          </MDBNavbar>

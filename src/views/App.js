@@ -7,6 +7,7 @@ import "animate.css/animate.min.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import { motion } from "framer-motion";
 import myPic from "../assets/Me.jpg";
+
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import "../styles/App.css";
