@@ -16,3 +16,21 @@ h1 {
    font-size: 44px;
    color: red;
 }
+
+.somebox {
+   width: 150px;
+   height: 150px;
+   background-color: red;
+   z-index: 100 !important;
+   transform-origin: 100px 100px;
+   margin: 0;
+}
+.animeDiv {
+   margin: 0;
+   position: absolute;
+}
+.container {
+   width: 100%;
+   position: relative;
+   overflow: hidden;
+}
