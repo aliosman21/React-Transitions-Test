@@ -14,6 +14,7 @@ import {
    MDBDropdownItem,
 } from "mdbreact";
 import Sound from "../assets/yo.mp3";
+
 import { BrowserRouter as Router } from "react-router-dom";
 
 class NavbarPage extends Component {
@@ -42,7 +43,7 @@ class NavbarPage extends Component {
                      <MDBNavLink to="/">Index</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                     <MDBNavLink to="/">About Me</MDBNavLink>
+                     <MDBNavLink to="/about">About Me</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
                      <MDBNavLink to="/home">Works</MDBNavLink>
