@@ -32,7 +32,15 @@ class NavbarPage extends Component {
    }; */
    render() {
       return (
-         <MDBNavbar color="indigo" dark expand="md">
+         <MDBNavbar
+            color="indigo"
+            dark
+            expand="md"
+            scrolling
+            scrollingNavbarOffset={350}
+            transparent
+            className="navbarTransparent"
+            sticky="top">
             <MDBNavbarBrand>
                <strong className="white-text">Ali Osman</strong>
             </MDBNavbarBrand>
