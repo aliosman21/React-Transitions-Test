@@ -1,3 +1,18 @@
-.works-container {
-   background-color: red;
+#signature {
+   stroke-dasharray: 870;
+   stroke-dashoffset: 870;
+   animation: sign 6s ease;
+   animation-fill-mode: forwards;
+}
+@keyframes sign {
+   to {
+      stroke-dashoffset: 0;
+   }
+}
+.sigHolder {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
 }
