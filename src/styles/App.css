@@ -1,39 +1,25 @@
 .myTypist {
    font-weight: bold;
-   z-index: 100;
    stroke: black;
    font-size: 44px;
    color: #576d99;
 }
-.typistHolderDiv {
-   z-index: 100;
-   grid-area: Typist;
-   justify-self: center;
-   align-self: start;
-}
 
 .fullAppPage {
-   width: 100vw;
-   height: auto;
-   display: grid;
-   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-   grid-template-columns: 0.2fr 3fr 0.2fr;
-   grid-template-areas:
-      ". . ."
-      ". pic . "
-      ". title ."
-      ". Typist ."
-      ". . .";
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.pictureBox {
+   margin-top: 5%;
 }
 
-.pictureBox {
-   grid-area: pic;
-   justify-self: center;
-   align-self: center;
-}
 .titleholder {
-   grid-area: title;
-   justify-self: center;
-   align-self: start;
+   margin-top: 5%;
    color: #576d99;
+}
+.typistHolderDiv {
+   margin-top: 6%;
 }

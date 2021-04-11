@@ -23,43 +23,49 @@ function App() {
 
    return (
       <>
-         <Animated animationIn="rotateInDownLeft" animationOut="zoomOutDown" isVisible={visibility}>
-            <div className="fullAppPage ">
-               <div className="pictureBox">
-                  <div>
-                     <AnimateKeyframes
-                        play="true"
-                        duration={2}
-                        fillMode="forwards"
-                        keyframes={["transform: rotateY(0) ", "transform: rotateY(180deg)"]}>
-                        <img
-                           width="110px"
-                           height="110px"
-                           src={myPic}
-                           style={{ borderRadius: "50%" }}
-                        />
-                     </AnimateKeyframes>
-                  </div>
+         <Animated
+            animationIn="rotateInDownLeft"
+            animationOut="zoomOutDown"
+            isVisible={visibility}
+            className="fullAppPage">
+            <div className="pictureBox">
+               <div>
+                  <AnimateKeyframes
+                     play="true"
+                     duration={2}
+                     fillMode="forwards"
+                     keyframes={[
+                        " transform: translateX(-1500px) ",
+                        "transform: rotateY(0);",
+                        "transform: rotateY(180deg)",
+                     ]}>
+                     <img
+                        width="110px"
+                        height="110px"
+                        src={myPic}
+                        style={{ borderRadius: "50%" }}
+                     />
+                  </AnimateKeyframes>
                </div>
-               <div className="titleholder">
-                  <ScrollAnimation animateIn="animate__zoomInDown" duration="2">
-                     <h1>Software Engineer</h1>
-                  </ScrollAnimation>
-               </div>
+            </div>
+            <div className="titleholder">
+               <ScrollAnimation animateIn="animate__zoomInDown" duration="2">
+                  <span className="myTypist">Software Engineer</span>
+               </ScrollAnimation>
+            </div>
 
-               <div className="typistHolderDiv">
-                  <Typist
-                     className={"myTypist"}
-                     typingSpeed="100"
-                     pauseTime="3000"
-                     sentences={[
-                        "Welcome to my website",
-                        "Hope you enjoy your look around",
-                        "Some weird stuff lies around here",
-                     ]}
-                     loop={false}
-                  />
-               </div>
+            <div className="typistHolderDiv">
+               <Typist
+                  className={"myTypist"}
+                  typingSpeed="100"
+                  pauseTime="3000"
+                  sentences={[
+                     "Welcome to my website",
+                     "Hope you enjoy your look around",
+                     "Some weird stuff lies around here",
+                  ]}
+                  loop={false}
+               />
             </div>
          </Animated>
       </>
