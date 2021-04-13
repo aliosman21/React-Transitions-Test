@@ -98,6 +98,17 @@ class NavbarPage extends Component {
                         />
                      </MDBNavLink>
                   </MDBNavItem>
+                  <MDBNavItem>
+                     <MDBNavLink to="/three" className="fancy-link pb-0 mb-2">
+                        <Typist
+                           showCursor={false}
+                           startDelay="2900"
+                           typingSpeed="100"
+                           sentences={["ThreeJS"]}
+                           loop={false}
+                        />
+                     </MDBNavLink>
+                  </MDBNavItem>
                </MDBNavbarNav>
             </MDBCollapse>
          </MDBNavbar>

@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
+    "@react-three/fiber": "^6.0.13",
     "@steveeeie/react-page-transition": "^1.2.1",
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
@@ -36,6 +37,7 @@
     "react-use-audio-player": "^1.2.4",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3",
+    "three": "^0.127.0",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
