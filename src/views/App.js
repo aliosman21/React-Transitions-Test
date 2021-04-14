@@ -23,11 +23,15 @@ function App() {
 
    return (
       <>
-         <Animated
-            animationIn="rotateInDownLeft"
-            animationOut="zoomOutDown"
-            isVisible={visibility}
-            className="fullAppPage">
+         <div
+            style={{
+               width: "100vw",
+               top: "0",
+               display: "flex",
+               flexDirection: "column",
+               justifyContent: "center",
+               alignItems: "center",
+            }}>
             <div className="pictureBox">
                <div>
                   <AnimateKeyframes
@@ -67,7 +71,7 @@ function App() {
                   loop={false}
                />
             </div>
-         </Animated>
+         </div>
       </>
    );
 }
