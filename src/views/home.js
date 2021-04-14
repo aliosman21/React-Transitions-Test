@@ -5,6 +5,7 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import { Card, Icon, Image } from "semantic-ui-react";
 import myPic from "../assets/Me.jpg";
 import MaterialCard from "../Components/MaterialCard";
+import HorizontalCard from "../Components/horizontalCard";
 import "semantic-ui-css/semantic.min.css";
 import {
    Animator,
@@ -69,9 +70,30 @@ function Home() {
             </Animator>
          </ScrollPage>
          <ScrollPage page={2}>
-            <Animator animation={ZoomInScrollOut}>
-               <MaterialCard />
-            </Animator>
+            <div
+               style={{
+                  display: "flex",
+                  width: "100%",
+                  height: "100%",
+                  justifyContent: "space-between",
+               }}>
+               <Animator animation={ZoomInScrollOut}>
+                  <MaterialCard />
+               </Animator>
+            </div>
+         </ScrollPage>
+         <ScrollPage page={3}>
+            <div
+               style={{
+                  display: "flex",
+                  width: "100%",
+                  height: "100%",
+                  justifyContent: "space-between",
+               }}>
+               <Animator animation={ZoomInScrollOut}>
+                  <HorizontalCard />
+               </Animator>
+            </div>
          </ScrollPage>
       </ScrollContainer>
    );
