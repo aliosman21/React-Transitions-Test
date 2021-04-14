@@ -22,6 +22,32 @@
    transform: rotateY(180deg);
    transition: opacity 1500ms, transform 1000ms;
 }
+/* ------------------------------------------------------------------ */
+.Index-page {
+   position: absolute;
+}
+
+.Index-page-enter {
+   transform: translateX(-1000px);
+   opacity: 1;
+}
+
+.Index-page-enter-active {
+   opacity: 1;
+   transform: translateX(0);
+   transition: opacity 300ms, transform 500ms;
+}
+
+.Index-page-exit {
+   opacity: 1;
+}
+
+.Index-page-exit-active {
+   opacity: 0;
+   transform: rotateY(180deg);
+   transition: opacity 1500ms, transform 1000ms;
+}
+/* ------------------------------------------------------------------ */
 
 .page1 {
    position: absolute;

@@ -4,10 +4,11 @@ import Fade from "react-reveal/Fade";
 import Typist from "react-text-typist";
 import { AnimateKeyframes } from "react-simple-animate";
 import Animate from "animate.css-react";
-
+import LightSpeed from "react-reveal/LightSpeed";
 import { Animated } from "react-animated-css";
 import ScrollAnimation from "react-animate-on-scroll";
 import { motion } from "framer-motion";
+import Zoom from "react-reveal/Zoom";
 import myPic from "../assets/Me.jpg";
 import { NavLink } from "react-router-dom";
 import { Prompt } from "react-router";
@@ -53,9 +54,9 @@ function App() {
                </div>
             </div>
             <div className="titleholder">
-               <ScrollAnimation animateIn="animate__zoomInDown" duration="2">
-                  <span className="myTypist">Software Engineer</span>
-               </ScrollAnimation>
+               <Zoom left cascade duration={3000}>
+                  <h1 className="myTypist">Software Engineer</h1>
+               </Zoom>
             </div>
 
             <div className="typistHolderDiv">
@@ -71,6 +72,119 @@ function App() {
                   loop={false}
                />
             </div>
+            <LightSpeed left>
+               <h1>React Reveal</h1>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit
+                  faucibus mollis. Praesent ultrices vehicula hendrerit. Maecenas ut ante ut magna
+                  viverra consequat. Sed pretium viverra quam non blandit. Nullam bibendum odio non
+                  posuere venenatis. Aliquam a quam non velit pharetra convallis. Duis lorem libero,
+                  vehicula fermentum elementum vel, finibus at purus. Curabitur feugiat felis a
+                  dolor ultricies interdum. Pellentesque habitant morbi tristique senectus et netus
+                  et malesuada fames ac turpis egestas. Cras sit amet sem interdum, lacinia nulla
+                  ac, tincidunt odio.
+               </p>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit
+                  faucibus mollis. Praesent ultrices vehicula hendrerit. Maecenas ut ante ut magna
+                  viverra consequat. Sed pretium viverra quam non blandit. Nullam bibendum odio non
+                  posuere venenatis. Aliquam a quam non velit pharetra convallis. Duis lorem libero,
+                  vehicula fermentum elementum vel, finibus at purus. Curabitur feugiat felis a
+                  dolor ultricies interdum. Pellentesque habitant morbi tristique senectus et netus
+                  et malesuada fames ac turpis egestas. Cras sit amet sem interdum, lacinia nulla
+                  ac, tincidunt odio.
+               </p>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit
+                  faucibus mollis. Praesent ultrices vehicula hendrerit. Maecenas ut ante ut magna
+                  viverra consequat. Sed pretium viverra quam non blandit. Nullam bibendum odio non
+                  posuere venenatis. Aliquam a quam non velit pharetra convallis. Duis lorem libero,
+                  vehicula fermentum elementum vel, finibus at purus. Curabitur feugiat felis a
+                  dolor ultricies interdum. Pellentesque habitant morbi tristique senectus et netus
+                  et malesuada fames ac turpis egestas. Cras sit amet sem interdum, lacinia nulla
+                  ac, tincidunt odio.
+               </p>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit
+                  faucibus mollis. Praesent ultrices vehicula hendrerit. Maecenas ut ante ut magna
+                  viverra consequat. Sed pretium viverra quam non blandit. Nullam bibendum odio non
+                  posuere venenatis. Aliquam a quam non velit pharetra convallis. Duis lorem libero,
+                  vehicula fermentum elementum vel, finibus at purus. Curabitur feugiat felis a
+                  dolor ultricies interdum. Pellentesque habitant morbi tristique senectus et netus
+                  et malesuada fames ac turpis egestas. Cras sit amet sem interdum, lacinia nulla
+                  ac, tincidunt odio.
+               </p>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit
+                  faucibus mollis. Praesent ultrices vehicula hendrerit. Maecenas ut ante ut magna
+                  viverra consequat. Sed pretium viverra quam non blandit. Nullam bibendum odio non
+                  posuere venenatis. Aliquam a quam non velit pharetra convallis. Duis lorem libero,
+                  vehicula fermentum elementum vel, finibus at purus. Curabitur feugiat felis a
+                  dolor ultricies interdum. Pellentesque habitant morbi tristique senectus et netus
+                  et malesuada fames ac turpis egestas. Cras sit amet sem interdum, lacinia nulla
+                  ac, tincidunt odio.
+               </p>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit
+                  faucibus mollis. Praesent ultrices vehicula hendrerit. Maecenas ut ante ut magna
+                  viverra consequat. Sed pretium viverra quam non blandit. Nullam bibendum odio non
+                  posuere venenatis. Aliquam a quam non velit pharetra convallis. Duis lorem libero,
+                  vehicula fermentum elementum vel, finibus at purus. Curabitur feugiat felis a
+                  dolor ultricies interdum. Pellentesque habitant morbi tristique senectus et netus
+                  et malesuada fames ac turpis egestas. Cras sit amet sem interdum, lacinia nulla
+                  ac, tincidunt odio.
+               </p>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit
+                  faucibus mollis. Praesent ultrices vehicula hendrerit. Maecenas ut ante ut magna
+                  viverra consequat. Sed pretium viverra quam non blandit. Nullam bibendum odio non
+                  posuere venenatis. Aliquam a quam non velit pharetra convallis. Duis lorem libero,
+                  vehicula fermentum elementum vel, finibus at purus. Curabitur feugiat felis a
+                  dolor ultricies interdum. Pellentesque habitant morbi tristique senectus et netus
+                  et malesuada fames ac turpis egestas. Cras sit amet sem interdum, lacinia nulla
+                  ac, tincidunt odio.
+               </p>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit
+                  faucibus mollis. Praesent ultrices vehicula hendrerit. Maecenas ut ante ut magna
+                  viverra consequat. Sed pretium viverra quam non blandit. Nullam bibendum odio non
+                  posuere venenatis. Aliquam a quam non velit pharetra convallis. Duis lorem libero,
+                  vehicula fermentum elementum vel, finibus at purus. Curabitur feugiat felis a
+                  dolor ultricies interdum. Pellentesque habitant morbi tristique senectus et netus
+                  et malesuada fames ac turpis egestas. Cras sit amet sem interdum, lacinia nulla
+                  ac, tincidunt odio.
+               </p>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit
+                  faucibus mollis. Praesent ultrices vehicula hendrerit. Maecenas ut ante ut magna
+                  viverra consequat. Sed pretium viverra quam non blandit. Nullam bibendum odio non
+                  posuere venenatis. Aliquam a quam non velit pharetra convallis. Duis lorem libero,
+                  vehicula fermentum elementum vel, finibus at purus. Curabitur feugiat felis a
+                  dolor ultricies interdum. Pellentesque habitant morbi tristique senectus et netus
+                  et malesuada fames ac turpis egestas. Cras sit amet sem interdum, lacinia nulla
+                  ac, tincidunt odio.
+               </p>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit
+                  faucibus mollis. Praesent ultrices vehicula hendrerit. Maecenas ut ante ut magna
+                  viverra consequat. Sed pretium viverra quam non blandit. Nullam bibendum odio non
+                  posuere venenatis. Aliquam a quam non velit pharetra convallis. Duis lorem libero,
+                  vehicula fermentum elementum vel, finibus at purus. Curabitur feugiat felis a
+                  dolor ultricies interdum. Pellentesque habitant morbi tristique senectus et netus
+                  et malesuada fames ac turpis egestas. Cras sit amet sem interdum, lacinia nulla
+                  ac, tincidunt odio.
+               </p>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit
+                  faucibus mollis. Praesent ultrices vehicula hendrerit. Maecenas ut ante ut magna
+                  viverra consequat. Sed pretium viverra quam non blandit. Nullam bibendum odio non
+                  posuere venenatis. Aliquam a quam non velit pharetra convallis. Duis lorem libero,
+                  vehicula fermentum elementum vel, finibus at purus. Curabitur feugiat felis a
+                  dolor ultricies interdum. Pellentesque habitant morbi tristique senectus et netus
+                  et malesuada fames ac turpis egestas. Cras sit amet sem interdum, lacinia nulla
+                  ac, tincidunt odio.
+               </p>
+            </LightSpeed>
          </div>
       </>
    );
