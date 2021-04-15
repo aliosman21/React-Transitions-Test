@@ -34,4 +34,4 @@ https://github.com/joshwnj/react-visibility-sensor
 
 
 
-Notice: don't try to npm install you will be flooded with packages these three packages above are the best to use only along with the react typist
+Notice: don't try to npm install you will be flooded with packages these three packages above are the best to use only along with the react typist only
