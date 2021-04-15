@@ -56,7 +56,7 @@ function App() {
             <div className="titleholder">
                <VisibilitySensor onChange={onChange} offset={{ top: "150" }} scrollDelay={0}>
                   <Zoom fraction={0.5} opposite left cascade when={visible} duration={1500}>
-                     <h1 className="myTypist">Software Engineer</h1>
+                     <h1 className="myTypist">Some text</h1>
                   </Zoom>
                </VisibilitySensor>
             </div>
