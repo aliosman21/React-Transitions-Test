@@ -38,11 +38,8 @@ class NavbarPage extends Component {
             dark
             expand="md"
             scrolling
-            scrollingNavbarOffset={350}
-            /* transparent */
             style={{ height: "10vh" }}
-            className="navbarTransparent"
-            sticky="top">
+            fixed="top">
             <MDBNavbarBrand>
                <Typist
                   showCursor={false}

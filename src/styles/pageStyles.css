@@ -70,6 +70,7 @@
 }
 
 .page1-exit-active {
-   transform: rotateY(90deg);
-   transition: transform 300ms;
+   transform: rotateY(720deg);
+   opacity: 0;
+   transition: transform 300ms, opacity 400ms;
 }
