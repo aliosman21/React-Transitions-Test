@@ -25,7 +25,13 @@ https://digital-flowers.github.io/react-animated-css.html
 BEST FOR NOW :
 
 https://www.react-reveal.com/
+
+
 https://reactcommunity.org/react-transition-group/
+
+
 https://github.com/joshwnj/react-visibility-sensor
+
+
 
 Notice: don't try to npm install you will be flooded with packages these three packages above are the best to use only along with the react typist
