@@ -39,7 +39,7 @@ class NavbarPage extends Component {
             expand="md"
             scrolling
             scrollingNavbarOffset={350}
-            transparent
+            /* transparent */
             style={{ height: "10vh" }}
             className="navbarTransparent"
             sticky="top">

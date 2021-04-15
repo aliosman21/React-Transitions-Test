@@ -11,17 +11,17 @@ import { motion } from "framer-motion";
 import Zoom from "react-reveal/Zoom";
 import myPic from "../assets/Me.jpg";
 import { NavLink } from "react-router-dom";
+import VisibilitySensor from "react-visibility-sensor";
 import { Prompt } from "react-router";
 import { useLayoutEffect, useState, useEffect } from "react";
+import TrackVisibility from "react-on-screen";
 import "../styles/App.css";
 
 function App() {
-   const [visibility, setvisibility] = useState(false);
-
-   useEffect(() => {
-      setvisibility(true);
-   }, []);
-
+   const [visible, setVisible] = useState(false);
+   const onChange = (isVisible) => {
+      setVisible(isVisible);
+   };
    return (
       <>
          <div
@@ -54,9 +54,11 @@ function App() {
                </div>
             </div>
             <div className="titleholder">
-               <Zoom left cascade duration={3000}>
-                  <h1 className="myTypist">Software Engineer</h1>
-               </Zoom>
+               <VisibilitySensor onChange={onChange} offset={{ top: "150" }} scrollDelay={0}>
+                  <Zoom fraction={0.5} opposite left cascade when={visible} duration={1500}>
+                     <h1 className="myTypist">Software Engineer</h1>
+                  </Zoom>
+               </VisibilitySensor>
             </div>
 
             <div className="typistHolderDiv">
