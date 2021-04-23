@@ -1,4 +1,4 @@
-import { Route, BrowserRouter as Router, useLocation, Switch } from "react-router-dom";
+import { Route, BrowserRouter as Router, useLocation, Switch, Redirect } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { CSSTransition } from "react-transition-group";
 import { Transition } from "react-transition-group";
