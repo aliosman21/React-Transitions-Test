@@ -5,7 +5,6 @@ https://animate.style/#usage
 
 
 
-https://react-simple-animate.now.sh/
 
 https://react-simple-animate.now.sh/animate-keyframes/
 
@@ -33,5 +32,9 @@ https://reactcommunity.org/react-transition-group/
 https://github.com/joshwnj/react-visibility-sensor
 
 
+https://react-simple-animate.now.sh/
+
+
+https://www.npmjs.com/package/react-typist
 
 Notice: don't try to npm install you will be flooded with packages these three packages above are the best to use only along with the react typist only
