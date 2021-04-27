@@ -13,15 +13,43 @@ import myPic from "../assets/Me.jpg";
 import { NavLink } from "react-router-dom";
 import VisibilitySensor from "react-visibility-sensor";
 import { Prompt } from "react-router";
-import { useLayoutEffect, useState, useEffect } from "react";
+import { useLayoutEffect, useState, useEffect, useRef } from "react";
 import TrackVisibility from "react-on-screen";
+import anime from "animejs/lib/anime.es.js";
 import "../styles/App.css";
 
 function App() {
    const [visible, setVisible] = useState(false);
+   const animeImg = useRef(null);
    const onChange = (isVisible) => {
       setVisible(isVisible);
    };
+
+   useEffect(() => {
+      anime({
+         targets: ".someth",
+         translateX: {
+            value: 250,
+            duration: 800,
+         },
+         rotate: {
+            value: 360,
+            duration: 1800,
+            easing: "easeInOutSine",
+         },
+         scale: {
+            value: 2,
+            duration: 1600,
+            delay: 800,
+            easing: "easeInOutQuart",
+         },
+         border: {
+            borderRadius: ["50%"],
+            duration: 1000,
+         },
+         delay: 250, // All properties except 'scale' inherit 250ms delay
+      });
+   }, []);
    return (
       <>
          <div
@@ -54,6 +82,8 @@ function App() {
                   </AnimateKeyframes>
                </div>
             </div>
+
+            <img className="someth" ref={animeImg} width="110px" height="110px" src={myPic} />
             <div className="titleholder">
                <VisibilitySensor onChange={onChange} offset={{ top: "150" }} scrollDelay={0}>
                   <Zoom fraction={0.5} opposite left cascade when={visible} duration={1500}>

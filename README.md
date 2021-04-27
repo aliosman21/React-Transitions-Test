@@ -38,3 +38,6 @@ https://react-simple-animate.now.sh/
 https://www.npmjs.com/package/react-typist
 
 Notice: don't try to npm install you will be flooded with packages these three packages above are the best to use only along with the react typist only
+
+
+Just used AnimeJS in App.js to make animations on the second image, it can be integrated with classNames as class selectors just like CSS 
